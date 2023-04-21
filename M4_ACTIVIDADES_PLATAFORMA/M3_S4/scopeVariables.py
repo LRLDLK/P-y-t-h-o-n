@@ -17,3 +17,4 @@ def suma(a,b):
 print(suma(1,3))
 print(variable_global)
 # print(suma_valores) esta no accede porque es local
+# prueba
