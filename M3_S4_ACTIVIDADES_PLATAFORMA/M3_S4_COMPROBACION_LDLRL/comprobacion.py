@@ -1,20 +1,24 @@
 '''
-EJERCICIO:
-Requerimos imprimir en pantalla el resultado de la multiplicación de dos variables, las cuales
-llamaremos “a y b”, y les asignaremos los valores 20 y 30, respectivamente. Debemos documentar
-cada paso de la operación haciendo uso de comentarios. 
+EJERCICIO
+Requerimos crear una variable con el número 8, una con el número 10.5, y una con la palabra
+“ejercicio”. Luego, crear un set que contendrá cada una de las variables que creamos, y será
+asignado a una variable.
+A continuación, crearemos una lista que contendrá el set creado anteriormente, y una variable con
+el valor lógico False. Esta lista la asignaremos a una variable que luego imprimiremos en pantalla 
 '''
 
 #asignar variables
-a=20
-b=30
-#calcular
-c=a*b
-#imprimir
-print (c)
+num1 = 8
+num2 = 10.5
+palabra = "ejercicio"
 
-print("El resultado es: ", c) 
-print(f"El resultado es {a*b}") 
-print(f"El resultado es {c}") 
-#print("El resultado es: ()") 
-#print("El resultado es: {}{}{}".format(c,a*b,a))
+#crear set
+crea_set = {num1, num2, palabra}
+
+#crear lista
+variable = False
+crea_lista = [crea_set,variable] 
+
+#imprimir lista
+print (crea_lista)
+

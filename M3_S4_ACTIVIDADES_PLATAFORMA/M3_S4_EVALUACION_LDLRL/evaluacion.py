@@ -1,17 +1,31 @@
 '''
-ENUNCIADO DEL PROBLEMA:
-Requerimos hacer el cálculo de la raíz cuadrada de una variable llamada “y” que tiene valor 81,
-utilizando el módulo de la librería math incorporada en Python. El resultado debemos asignarlo a
-una variable que será impresa en pantalla.
+EJERCICIO
+Requerimos crear un registro de datos personales de tres personas. Los datos que se necesitan
+son: su nombre, apellido y teléfono. Para ello, generaremos un diccionario para cada una de las
+personas con los datos mencionados, y luego los almacenaremos dentro de una lista. Finalmente,
+imprimiremos en pantalla la lista.
 '''
-#importar math con funcion math.sqrt// siempre importar al inicio de la hoja
-import math
+#registro en diccionarios
+persona1 = {
+    "nombre" : "Alfa",
+    "apellido": "Beta",
+    "telefono": 2345678,  
+}
 
-#asignar variables
-y=81
+persona2 = {
+    "nombre" : "Gamma",
+    "apellido": "Delta",
+    "telefono": 1234567,  
+}
 
-#acumulando la raiz cuadrada de la variable, en vari raiz
-raiz = math.sqrt(y) 
+persona3 = {
+    "nombre" : "Lambda",
+    "apellido": "Omega",
+    "telefono": 3456789,  
+}
 
-# imprimir en consola
-print (f"La raiz cuadrada de {y} es : {raiz}")
+#agregar diccionarios a lista
+registros = [persona1,persona2,persona3]
+
+# imprimir lista
+print (f"Registro de datos : {registros}")
