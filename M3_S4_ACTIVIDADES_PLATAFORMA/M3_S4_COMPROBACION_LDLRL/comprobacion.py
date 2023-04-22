@@ -8,12 +8,12 @@ el valor lógico False. Esta lista la asignaremos a una variable que luego impri
 '''
 
 #asignar variables
-num1 = 8
-num2 = 10.5
+num_uno = 8
+num_dos = 10.5
 palabra = "ejercicio"
 
 #crear set
-crea_set = {num1, num2, palabra}
+crea_set = {num_uno, num_dos, palabra}
 
 #crear lista
 variable = False

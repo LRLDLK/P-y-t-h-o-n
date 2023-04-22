@@ -6,26 +6,26 @@ personas con los datos mencionados, y luego los almacenaremos dentro de una list
 imprimiremos en pantalla la lista.
 '''
 #registro en diccionarios
-persona1 = {
+persona_uno = {
     "nombre" : "Alfa",
     "apellido": "Beta",
-    "telefono": 2345678,  
+    "telefono": 2345678  
 }
 
-persona2 = {
+persona_dos = {
     "nombre" : "Gamma",
     "apellido": "Delta",
-    "telefono": 1234567,  
+    "telefono": 1234567  
 }
 
-persona3 = {
+persona_tres = {
     "nombre" : "Lambda",
     "apellido": "Omega",
-    "telefono": 3456789,  
+    "telefono": 3456789  
 }
 
 #agregar diccionarios a lista
-registros = [persona1,persona2,persona3]
+registros = [persona_uno,persona_dos,persona_tres]
 
 # imprimir lista
 print (f"Registro de datos : {registros}")
