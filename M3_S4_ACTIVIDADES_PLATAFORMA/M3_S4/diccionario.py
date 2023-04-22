@@ -34,9 +34,23 @@ print(claves)
 valores=(estudiantes.values())
 print(valores)
 
-#agreagar nuevo elemento
+#agregar nuevo elemento
 estudiantes['nuevo'] = 55
 print(estudiantes)
 
 #borrar un diccionario
 #estudiantes.clear()
+
+#diccionario dentro de otro
+personas = {
+  "persona_uno" : {"nombre" : "Alfa", "apellido": "Beta", "telefono": 2345678},
+  "persona_dos" : {"nombre" : "Alfa", 
+                   "apellido": "Beta", 
+                   "telefono": 2345678, 
+                   "direccion":{
+                       "calle":"lalal"},
+                    "region":"lelele"}
+}
+
+print(personas["persona_uno"]["nombre"])#resultado es Alfa
+print(personas["persona_dos"]["direccion"]["calle"])#resultado es lalal

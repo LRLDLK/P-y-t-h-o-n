@@ -29,3 +29,4 @@ registros = [persona_uno,persona_dos,persona_tres]
 
 # imprimir lista
 print (f"Registro de datos : {registros}")
+
