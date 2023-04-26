@@ -19,22 +19,19 @@ try:
     numero = int(numero)
     if numero == 0:
         print(f"El número {numero} es igual a cero")
-    else:
-        if numero > 0:
-            if (numero % 2) == 0:
-                print(f"El número {numero}, es positivo y par")
-            else:
-                print(f"El número {numero}, es positivo e impar")
-        else:           
-            if (numero % 2) == 0:
-                print(f"El número {numero}, es negativo y par")
-            else:
-                print(f"El número {numero}, es negativo e impar")
+    elif numero > 0:
+        if (numero % 2) == 0:
+            print(f"El número {numero}, es positivo y par")
+        else:
+            print(f"El número {numero}, es positivo e impar")
+    else:           
+        if (numero % 2) == 0:
+            print(f"El número {numero}, es negativo y par")
+        else:
+           print(f"El número {numero}, es negativo e impar")
 except ValueError:
     print("Lo ingresado NO es un número entero")
 
-
-# otra resolucion
   
         
     

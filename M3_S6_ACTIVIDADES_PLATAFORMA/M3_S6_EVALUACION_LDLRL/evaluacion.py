@@ -7,24 +7,32 @@ numeros = []
 contador = 1
 # Mientras no se hayan leído 3 números...
 while len(numeros) < 3:
-    # Hacemos un ciclo infinito que se romperá solo cuando estén los tres números ingresados correctamente:
-    numero = input("Ingrese el número entero " + str(contador) + ": ")
-
+    #  ciclo infinito que se romperá solo cuando estén los tres números ingresados correctamente:
+    numeroEntero = input("Ingrese el número entero N°" + str(contador) + ": ")
+ 
     try:
-            numero = int(numero)       
-            # Si todo es correcto, agregamos el número al arreglo
-            numeros.append(numero)
-            # Y aumenta el contador
-            contador = contador + 1
+            numero = int(numeroEntero)
+            # comprobación si el número existe
+            if numero in numeros:
+                print("El número ya existe")
+            else:
+                # Si todo es correcto, agrega número al arreglo
+                numeros.append(numero)
+                # Y aumenta el contador
+                contador += 1
     except ValueError:
         print("Lo ingresado NO es un número entero")
 
-# ordenar los  3 números
+#  los 3 números ordenados
 
 for i in numeros:
     for j in range(len(numeros) - 1):
         if numeros[j] < numeros[j+1]:
             numeros[j], numeros[j+1] = numeros[j+1], numeros[j]
-# ordenados se imprimen
-for numero in numeros:
-    print(numero)
+# imprimiendo
+for nro in numeros:
+    print(nro)
+    
+#otra solucion
+
+
