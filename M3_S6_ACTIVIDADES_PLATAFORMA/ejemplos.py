@@ -8,6 +8,27 @@
 
 # print("La resistencia total es: {:.2f}".format(rT))
 
+# otra solucion
+
+
+# def validate(texto):
+#     try:
+#         while True:
+#             r = float(input(texto))
+#             if r>0:
+#                 return r
+#     except Exception as ex:
+#         print("Ha ocurrido un error en el ingreso de la info: ", ex)
+#         print("Ha ocurrido un error en el ingreso de la info, ingrese nuevamente el valor")
+
+# r_1 =validate("Ingrese la resistencia 1 : ")
+# r_2 = validate("Ingrese la resistencia 2 : ")
+# r_3 = validate("Ingrese la resistencia 3 : ")
+
+# resTot = (1/((1/r_1)+(1/r_2)+(1/r_3)))
+
+# print("La resistencia total es: ", resTot)
+
 # ---------------------------------------------------------
 
 # calcular  hipotenusa req ingreso catetos a y b
@@ -113,4 +134,42 @@
 #             break
 #         case _:
 #             print("Esa opcion no es válida!")
+# ---------------------------------------------------
+#crear una simulaciond de ingreso de una contraseña
 
+# passw = "pass"
+
+# intentos = 1
+# while intentos <= 3:
+#     clave = input(f"Ingrese la clave: ")
+#     if clave == passw:
+#         print("clave correcta")
+#         break
+#     elif intentos == 3:
+#         print("Cantidad de intentos agotada")
+#         intentos = 4
+#     else:        
+#         print(f"Ingreso {intentos} incorrecto, ingrese nuevamente la clave. \n Al intento 3 se bloqueará")
+#         intentos +=1
+
+#crear un programa que adivine una palabra secreta
+
+# import random
+# intentos = 5
+# turno = 0
+# ingreso = ""
+
+# palabras_secretas = ["arroz", "fideo", "gato","perro"]
+# adivina = random.choice(palabras_secretas)
+# # print(adivina)
+# while adivina  != ingreso and turno < intentos:
+#     ingreso = input("Ingrese la palabra: ")
+#     turno += 1
+#     if ingreso == adivina:
+#         print(f"Acertaste en el intento {turno}")
+#     elif turno == intentos:
+#             print(f"Se terminaron los intentos. La palabra es * {adivina} *\nSuerte en el próximo juego!!")
+#     else:
+#         print(f"Aun no acertaste. Sigue probando. vas en el intento {turno}")
+
+# 

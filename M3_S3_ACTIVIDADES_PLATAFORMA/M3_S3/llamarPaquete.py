@@ -2,3 +2,4 @@
 import paquete.funciones #IMPORTACION DE UN PQT Q CONTIENE UN ARCHIVO funciones.py
 
 paquete.funciones.suma(2,4)
+paquete.funciones.resta(4,3)

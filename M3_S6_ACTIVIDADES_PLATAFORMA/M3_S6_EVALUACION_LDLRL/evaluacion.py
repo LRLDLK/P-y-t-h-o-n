@@ -16,7 +16,7 @@ while len(numeros) < 3:
             if numero in numeros:
                 print("El número ya existe")
             else:
-                # Si todo es correcto, agrega número al arreglo
+                # Si todo es correcto, agrega número 
                 numeros.append(numero)
                 # Y aumenta el contador
                 contador += 1
@@ -32,7 +32,17 @@ for i in numeros:
 # imprimiendo
 for nro in numeros:
     print(nro)
-    
+
+#-------------------------------------------------------------  
 #otra solucion
 
+num_1 = int(input("Ingrese el número entero N°1: "))
+num_2 = int(input("Ingrese el número entero N°2: "))
+num_3 = int(input("Ingrese el número entero N°3: "))
+
+if len(set({num_1,num_2,num_3})) != 3:
+    print("Debe ingresar números distintos")
+else:
+    ordenados = sorted([num_1,num_2,num_3],reverse=True)
+    print(ordenados)
 
