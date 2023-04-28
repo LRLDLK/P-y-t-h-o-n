@@ -31,28 +31,30 @@ for k in (lista_final):
 # for l in listas:
 #     if l[0] == 0:
 #         continue
+# print(f"Imprimiendo cada dato resultante: ")
 #     for n in l:
 #         if n  == 0:
 #             continue
 #         print(n)
         
 #----------------------
-# mi_lista = [[1, 2, 3], [0, 4, 5], [4, 0, 1], [6, 5, 4]] 
-# resultados = [] 
+mi_lista = [[1, 2, 3], [0, 4, 5], [4, 0, 1], [6, 5, 4]] 
+resultados = [] 
 
 
-# for numeros in mi_lista:     
-#     sublista = [] 
-#     j = 0 
-#     for valor in numeros: 
-#         if valor == 0 and j == 0: 
-#             break 
-#         elif valor == 0 and j != 0: 
-#             continue 
-#         else: sublista.append(valor) 
-#         j += 1 
-#     if sublista: 
-#         resultados.append(sublista) 
+for numeros in mi_lista:     
+    sublista = [] 
+    h = 0 
+    for valor in numeros: 
+        if valor == 0 and h == 0: 
+            break 
+        elif valor == 0 and h != 0: 
+            continue 
+        else: sublista.append(valor) 
+        h += 1 
+    
+    if sublista: 
+        resultados.append(sublista) 
 
-# print(resultados)    
+print(resultados)    
 
