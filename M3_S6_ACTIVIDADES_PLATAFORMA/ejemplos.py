@@ -173,3 +173,27 @@
 #         print(f"Aun no acertaste. Sigue probando. vas en el intento {turno}")
 
 # 
+#--------------------ejercicio---------------
+#se requiere encontrar el primer numero par en la lista usando un bucle while
+
+# lista = [3,5,2,8,1,10]
+# i=0
+# while i < len(lista):
+#     if lista[i] %2 == 0:
+#         print("el primer numero par es", lista[i])
+#         break
+#     i += 1
+# else:
+# #no siempre el else está a la altura del if... 
+#     print("No se encontró un número que sea par")
+        
+#calcular la suma de todos los numeros usando ciclo while 
+
+numeros = [3,5,2,8,1,10]
+i=0
+suma=0
+while i < len(numeros):
+    suma = suma + numeros[i]
+    i+=1
+    
+print(f"La suma de los números es: {suma}")    

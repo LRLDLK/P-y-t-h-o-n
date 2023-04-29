@@ -36,3 +36,4 @@ for d in lista:
 print("Imprimiendo las sublistas dentro del diccionario: ")
 for x,y in diccionario.items():
     print(f"{x}: {y}")  
+    
