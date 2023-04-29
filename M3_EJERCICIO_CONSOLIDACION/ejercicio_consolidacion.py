@@ -28,40 +28,53 @@ magos = ['Harry Houdini', 'David Blaine','Teller']
 cientificos = [ 'Newton', 'Hawking', 'Einstein']
 otros = ['Messi','Pele','Juanes']
 
-magos_grandiosos = []
+magos_grandiosos = ['Harry Houdini', 'David Blaine','Teller']
 
 nombre ="El gran "
 indice= 0
 
+#PASO A:
 def hacer_grandioso():
-    for indice, item in enumerate(magos):
+    for indice, item in enumerate(magos_grandiosos):
         if item:
-            magos_grandiosos.append(nombre+magos[indice])                    
+            magos_grandiosos[indice] = nombre+magos_grandiosos[indice]                              
         indice+=1         
     return  magos_grandiosos
 
 hacer_grandioso()
 
-
+#PASO B:
 def imprimir_nombres():
-    for m in magos:
+    print('La lista de *magos* es : ')
+    for m in magos:        
         print(m)
-    for c in cientificos:
+    print('La lista de *científicos* es : ')    
+    for c in cientificos:        
         print(c)
-    for o in otros:
+    print('La lista de *otros* es : ')    
+    for o in otros:        
         print(o)
 
-
+#PASO C:
+print("------------------------------------------------")
 print("-----------------LISTA ORIGINAL-----------------")
-print("La lista original de los nombres es: ")
+print("------------------------------------------------")
+print("La lista original de los nombres es: \n")
 imprimir_nombres()
 
+#PASO D:
+print("---------------------------------------------")
 print("-----------------LISTA FINAL-----------------")
-print("La lista final de los nombres es: ")
-for m in magos_grandiosos:
-        print(m)
+print("---------------------------------------------")
+print("La lista final de los nombres es: \n")
+
+print('La lista de *magos grandiosos* es : ')
+for m in magos_grandiosos:    
+    print(m)
+print('La lista de *científicos* es : ')
 for c in cientificos:
     print(c)
+print('La lista de *los restantes* es : ')
 for o in otros:
     print(o)
     
