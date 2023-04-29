@@ -189,11 +189,50 @@
         
 #calcular la suma de todos los numeros usando ciclo while 
 
-numeros = [3,5,2,8,1,10]
-i=0
-suma=0
-while i < len(numeros):
-    suma = suma + numeros[i]
-    i+=1
+# numeros = [3,5,2,8,1,10]
+# i=0
+# suma=0
+# while i < len(numeros):
+#     suma = suma + numeros[i]
+#     i+=1
     
-print(f"La suma de los números es: {suma}")    
+# print(f"La suma de los números es: {suma}")    
+
+#--------------------ejercicio---------------
+#encontar el nro mas grande en la lista usando bucle for
+
+# nros = [45, 23, 67, 8, 12, 56, 8, 990]
+# mayor = nros[0]
+# menor = nros[0]
+# repetido = []
+
+
+# for n in nros:
+#     if n > mayor:
+#         mayor = n
+#     if n < menor:
+#         menor = n
+       
+#     if nros.count(n) > 1 and n not in repetido:
+#             repetido.append(n)
+            
+#print(lista.count(n))
+        
+# print("El número mayor es: ", mayor)
+# print("El número menor es: ", menor)       
+# print(f"Número(s) repetido(s): {repetido}")  
+
+#otro ejercicio
+#calcular precio toral de la compra con descuento de 10%, *0.1 dscto 10%
+
+# listado = [25.5, 12.3, 36.4, 9.75, 15.2]
+# suma = 0
+
+# for l in listado:
+#     suma  += l
+
+# compra_desc = suma*.9
+
+# print(f"El valor total de la compra es {round(suma,2)}")
+# print(f"El valor de la compra con descuento es {round(compra_desc,2)}")
+
