@@ -26,11 +26,11 @@ while len(numeros) < 3:
 
         
 #  PASO B: operaciones        
-def operaciones(numeros):
+def operaciones(lista):
         suma = 0 
-        for n in numeros:
+        for n in lista:
                 suma  += n
-                resta = numeros[0] - (numeros[1]+numeros[2])
+                resta = lista[0] - (lista[1]+lista[2])
         tupla_resultado = (round(suma,2), round(resta,2))
         tupla_resultado = tuple(tupla_resultado)
         print("____________________________________________________________")
