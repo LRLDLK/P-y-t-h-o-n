@@ -14,7 +14,7 @@ contador=1
 
 while contador < 3:
     #  ciclo infinito que se romperá solo cuando estén los 2 números ingresados correctamente:
-    numeroEntero = input("Ingrese el número N°" + str(contador) + ": ") 
+    numeroEntero = input('Ingrese el número N°' + str(contador) + ': ') 
     try:
             numero = float(numeroEntero)
             if contador == 1:
@@ -23,31 +23,31 @@ while contador < 3:
                 num_2 = numero
             contador += 1              
     except ValueError:
-        print("Lo ingresado NO es válido")
+        print('Lo ingresado NO es válido')
 
 
 #PASO A:
-print("--------------OPERACIONES ARITMÉTICAS---------------")
+print('--------------OPERACIONES ARITMÉTICAS---------------')
 def sumar(a,b):
     suma = a + b
     return round(suma,2) 
 #sumar = lambda a, b: a + b
-print(f"La suma de los números {num_1} y {num_2} es:  {sumar(num_1,num_2)}")
+print(f'La suma de los números {num_1} y {num_2} es:  {sumar(num_1,num_2)}')
 
 def restar(a,b):
     resta = a - b
     return round(resta,2) 
-print(f"La resta de los números {num_1} y {num_2} es:  {restar(num_1,num_2)}")
+print(f'La resta de los números {num_1} y {num_2} es:  {restar(num_1,num_2)}')
 
 def multiplicar(a,b):
     multiplica = a * b
     return round(multiplica,2) 
-print(f"La multiplicación de los números {num_1} y {num_2} es:  {multiplicar(num_1,num_2)}")
+print(f'La multiplicación de los números {num_1} y {num_2} es:  {multiplicar(num_1,num_2)}')
 
 def dividir(a,b):
     divide = a / b
     return round(divide,2) 
-print(f"La división de los números {num_1} y {num_2} es:  {dividir(num_1,num_2)}")
+print(f'La división de los números {num_1} y {num_2} es:  {dividir(num_1,num_2)}')
 
 #PASO B: 
 def operaciones(a,b):
@@ -69,11 +69,11 @@ def resultado_final(a,b):
     valores = (operaciones(a,b))   
     para_diccionario = zip(claves, valores)
     diccionario = dict(para_diccionario)
-    print("-----------------DICCIONARIO-----------------------")
-    print("Imprimiendo las operaciones dentro del diccionario: ")
+    print('-----------------DICCIONARIO-----------------------')
+    print('Imprimiendo las operaciones dentro del diccionario: ')
     for x,y in diccionario.items():
-          print(f"{x}: {y}")   
-    print("----------------------------------------------------")
+          print(f'{x}: {y}')   
+    print('----------------------------------------------------')
 
 
 #PASO C-2:
