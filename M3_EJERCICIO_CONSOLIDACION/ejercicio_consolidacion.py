@@ -29,7 +29,7 @@ magos_grandiosos = ['Harry Houdini', 'David Blaine','Teller']
 cientificos = [ 'Newton', 'Hawking', 'Einstein']
 otros = ['Messi','Pele','Juanes']
 
-nombre ="El gran "
+nombre ='El gran '
 indice= 0
 
 #PASO A:
@@ -46,37 +46,37 @@ hacer_grandioso()
 def imprimir_nombres():
     print('La lista de *magos* es : ')
     for m in magos:        
-        print(m)
+        print('•',m)
     print('La lista de *científicos* es : ')    
     for c in cientificos:        
-        print(c)
+        print('•',c)
     print('La lista de *otros* es : ')    
     for o in otros:        
-        print(o)
+        print('•',o)
 
 #PASO C:
-print("------------------------------------------------")
-print("-----------------LISTA ORIGINAL-----------------")
-print("------------------------------------------------")
-print("La lista original de los nombres es: \n")
+print('------------------------------------------------')
+print('-----------------LISTA ORIGINAL-----------------')
+print('------------------------------------------------')
+print('La lista original de los nombres es: \n')
 imprimir_nombres()
 
 #PASO D:
-print("---------------------------------------------")
-print("-----------------LISTA FINAL-----------------")
-print("---------------------------------------------")
-print("La lista final de los nombres es: \n")
+print('---------------------------------------------')
+print('-----------------LISTA FINAL-----------------')
+print('---------------------------------------------')
+print('La lista final de los nombres es: \n')
 
 print('La lista de *magos grandiosos* es : ')
 for m in magos_grandiosos:    
-    print(m)
+    print('•',m)
 print('La lista de *científicos* es : ')
 for c in cientificos:
-    print(c)
+    print('•',c)
 print('La lista de *los restantes* es : ')
 for o in otros:
-    print(o)
+    print('•',o)
 
-print("---------------------------------------------")
-print("---------------------------------------------")
-print("---------------------------------------------")
+print('---------------------------------------------')
+print('---------------------------------------------')
+print('---------------------------------------------')
