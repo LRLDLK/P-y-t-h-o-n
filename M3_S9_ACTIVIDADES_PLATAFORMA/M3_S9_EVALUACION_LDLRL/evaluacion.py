@@ -38,11 +38,12 @@ def dividir():
 print(f"La división de los números {num_1} y {num_2} es:  {dividir()}")
 
 #PASO B: 
-def operaciones():
-    suma = num_1 + num_2
-    resta = num_1 - num_2
-    multiplica = num_1 * num_2
-    divide = num_1 / num_2
+def operaciones(num1= float(input('Ingrese el primer número entero: ')), 
+num2= float(input('Ingrese el segundo número entero: '))):
+    suma = num1 + num2
+    resta = num1 - num2
+    multiplica = num1 * num2
+    divide = num1 / num2
 
     resu = (suma, resta, multiplica, divide)
     res = tuple(resu)
