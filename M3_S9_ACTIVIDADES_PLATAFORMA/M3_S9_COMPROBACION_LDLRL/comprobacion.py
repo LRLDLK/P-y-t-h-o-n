@@ -12,7 +12,7 @@ contador = 1
 # Mientras no se hayan ingresado 3 números a la lista...
 while len(numeros) < 3:
     #  ciclo infinito que se romperá solo cuando estén los tres números ingresados correctamente:
-    numeroEntero = input("Ingrese el número entero N°" + str(contador) + ": ")
+    numeroEntero = input("Ingrese el número N°" + str(contador) + ": ")
  
     try:
             numero = float(numeroEntero)
@@ -22,7 +22,7 @@ while len(numeros) < 3:
             contador += 1
                 
     except ValueError:
-        print("Lo ingresado NO es un número entero")
+        print("Lo ingresado NO es válido")
 
         
 #  PASO B: operaciones        

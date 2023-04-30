@@ -5,46 +5,57 @@
 # y regrese el resultado en forma de tupla de su suma, resta, multiplicación y división.
 # PASO C: Los resultados se deben almacenar en un diccionario, cuyas claves serán: 
 # Suma, Resta, Multiplicación y División, 
-# y los valores de cada clave serán los resultados obtenidos con la función creada anteriormente.
+# PASO C: y los valores de cada clave serán los resultados obtenidos con la función creada anteriormente.
 
-num_1= float(input('Ingrese el primer número entero: ')) 
-num_2= float(input('Ingrese el segundo número entero: '))
-nombre = ['Suma', 'Resta', 'Multiplicación', 'División']   
-diccionario = dict()
-indice = 0
-resultados =[]
+num_1= 0
+num_2= 0
+claves = ['Suma', 'Resta', 'Multiplicación', 'División']   
+
+contador=1
+
+while contador < 3:
+    #  ciclo infinito que se romperá solo cuando estén los 2 números ingresados correctamente:
+    numeroEntero = input("Ingrese el número N°" + str(contador) + ": ") 
+    try:
+            numero = float(numeroEntero)
+            if contador == 1:
+                num_1 = numero
+            elif contador == 2:
+                num_2 = numero
+            contador += 1              
+    except ValueError:
+        print("Lo ingresado NO es válido")
+
 
 #PASO A:
-print("--------------OPERACIONES ARITMÉTICAS--------------")
-def sumar():
-    suma = num_1 + num_2
-    return suma 
+print("--------------OPERACIONES ARITMÉTICAS---------------")
+def sumar(a,b):
+    suma = a + b
+    return round(suma,2) 
 #sumar = lambda a, b: a + b
-print(f"La suma de los números {num_1} y {num_2} es:  {sumar()}")
+print(f"La suma de los números {num_1} y {num_2} es:  {sumar(num_1,num_2)}")
 
-def restar():
-    resta = num_1 - num_2
-    return resta 
-print(f"La resta de los números {num_1} y {num_2} es:  {restar()}")
+def restar(a,b):
+    resta = a - b
+    return round(resta,2) 
+print(f"La resta de los números {num_1} y {num_2} es:  {restar(num_1,num_2)}")
 
-def multiplicar():
-    multiplica = num_1 * num_2
-    return multiplica 
-print(f"La multiplicación de los números {num_1} y {num_2} es:  {multiplicar()}")
+def multiplicar(a,b):
+    multiplica = a * b
+    return round(multiplica,2) 
+print(f"La multiplicación de los números {num_1} y {num_2} es:  {multiplicar(num_1,num_2)}")
 
-def dividir():
-    divide = num_1 / num_2
-    return divide 
-print(f"La división de los números {num_1} y {num_2} es:  {dividir()}")
+def dividir(a,b):
+    divide = a / b
+    return round(divide,2) 
+print(f"La división de los números {num_1} y {num_2} es:  {dividir(num_1,num_2)}")
 
 #PASO B: 
-def operaciones(num1= float(input('Ingrese el primer número entero: ')), 
-num2= float(input('Ingrese el segundo número entero: '))):
-    suma = num1 + num2
-    resta = num1 - num2
-    multiplica = num1 * num2
-    divide = num1 / num2
-
+def operaciones(a,b):
+    suma = sumar(a,b)
+    resta = restar(a,b)
+    multiplica = multiplicar(a,b)
+    divide = dividir(a,b)
     resu = (suma, resta, multiplica, divide)
     res = tuple(resu)
     #print(type(res))
@@ -54,18 +65,22 @@ num2= float(input('Ingrese el segundo número entero: '))):
   
 #print(operaciones())
 
-#PASO C:
-resultados.append(operaciones())
-for l in resultados:
-    for k in l:
-        for n in nombre:    
-            diccionario[nombre[indice]] = l[indice]
-        indice+=1
-print("-----------------DICCIONARIO-----------------------")
-print("Imprimiendo las operaciones dentro del diccionario: ")
-for x,y in diccionario.items():
-    print(f"{x}: {y}")  
-    
+#PASO C-1:
+def resultado_final(a,b):    
+    valores = (operaciones(a,b))   
+    para_diccionario = zip(claves, valores)
+    diccionario = dict(para_diccionario)
+    print("-----------------DICCIONARIO-----------------------")
+    print("Imprimiendo las operaciones dentro del diccionario: ")
+    for x,y in diccionario.items():
+          print(f"{x}: {y}")   
+    print("----------------------------------------------------")
+
+
+#PASO C-2:
+resultado_final(num_1, num_2)
+
+
 
    
         
