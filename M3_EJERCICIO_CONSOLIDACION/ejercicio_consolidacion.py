@@ -25,10 +25,9 @@
 # PASO D: luego imprimir los nombres de los magos grandiosos, los nombres de los científicos, y los restantes.
 
 magos = ['Harry Houdini', 'David Blaine','Teller']
+magos_grandiosos = ['Harry Houdini', 'David Blaine','Teller']
 cientificos = [ 'Newton', 'Hawking', 'Einstein']
 otros = ['Messi','Pele','Juanes']
-
-magos_grandiosos = ['Harry Houdini', 'David Blaine','Teller']
 
 nombre ="El gran "
 indice= 0
@@ -77,4 +76,7 @@ for c in cientificos:
 print('La lista de *los restantes* es : ')
 for o in otros:
     print(o)
-    
+
+print("---------------------------------------------")
+print("---------------------------------------------")
+print("---------------------------------------------")

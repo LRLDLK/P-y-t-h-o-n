@@ -10,7 +10,6 @@
 num_1= 0
 num_2= 0
 claves = ['Suma', 'Resta', 'Multiplicación', 'División']   
-
 contador=1
 
 while contador < 3:
