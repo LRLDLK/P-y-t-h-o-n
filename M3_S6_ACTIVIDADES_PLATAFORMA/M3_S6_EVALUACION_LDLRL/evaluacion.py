@@ -20,6 +20,7 @@ while len(numeros) < 3:
                 numeros.append(numero)
                 # Y aumenta el contador
                 contador += 1
+                
     except ValueError:
         print("Lo ingresado NO es un número entero")
 
@@ -36,13 +37,13 @@ for nro in numeros:
 #-------------------------------------------------------------  
 #otra solucion
 
-num_1 = int(input("Ingrese el número entero N°1: "))
-num_2 = int(input("Ingrese el número entero N°2: "))
-num_3 = int(input("Ingrese el número entero N°3: "))
+# num_1 = int(input("Ingrese el número entero N°1: "))
+# num_2 = int(input("Ingrese el número entero N°2: "))
+# num_3 = int(input("Ingrese el número entero N°3: "))
 
-if len(set({num_1,num_2,num_3})) != 3:
-    print("Debe ingresar números distintos")
-else:
-    ordenados = sorted([num_1,num_2,num_3],reverse=True)
-    print(ordenados)
+# if len(set({num_1,num_2,num_3})) != 3:
+#     print("Debe ingresar números distintos")
+# else:
+#     ordenados = sorted([num_1,num_2,num_3],reverse=True)
+#     print(ordenados)
 
