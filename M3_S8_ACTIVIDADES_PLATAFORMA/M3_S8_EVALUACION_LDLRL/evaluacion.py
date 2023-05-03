@@ -32,6 +32,7 @@ for d in lista:
         diccionario[nombre[indice]] = lista[indice]
     indice+=1
 #print(diccionario) 
+#print(type(diccionario)) => #<class 'dict'>
 #=>{'A': [1, 2, 3], 'B': [0, 4, 5], 'C': [4, 0, 1], 'D': [6, 5, 4]}
 print("Imprimiendo las sublistas dentro del diccionario: ")
 for x,y in diccionario.items():

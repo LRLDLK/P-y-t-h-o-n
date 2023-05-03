@@ -69,16 +69,16 @@ def resultado_final(a,b):
     valores = (operaciones(a,b))   
     para_diccionario = zip(claves, valores)
     diccionario = dict(para_diccionario)
-    print('-----------------DICCIONARIO-----------------------')
-    print('Imprimiendo las operaciones dentro del diccionario: ')
     for x,y in diccionario.items():
           print(f'{x}: {y}')   
-    print('----------------------------------------------------')
+   
 
 
 #PASO C-2:
+print('-----------------DICCIONARIO-----------------------')
+print('Imprimiendo las operaciones dentro del diccionario: ')
 resultado_final(num_1, num_2)
-
+print('----------------------------------------------------')
 
 
    

@@ -8,5 +8,14 @@
 # 1 mi_lista = [5, 20, 15, 20, 25, 50, 20, 5, 18, 15]
 
 mi_lista = [5, 20, 15, 20, 25, 50, 20, 5, 18, 15]
-lista = set(mi_lista)
-print(sorted(lista))
+lista = sorted(list(set(mi_lista)))
+print(f"La lista ordenada y sin duplicados es:\n{lista}")
+
+#otra solucion:
+# mi_nueva_lista = set(mi_lista)
+#lista = sorted(list(mi_nueva_lista))
+
+#otra solucion:
+# lista= list(mi_nueva_lista)
+#sort(lista)# sort arregla la actual
+# print(sorted(lista))# sorted entrega nueva lista

@@ -32,12 +32,12 @@ def operaciones(lista):
                 suma  += n
                 resta = lista[0] - (lista[1]+lista[2])
         tupla_resultado = (round(suma,2), round(resta,2))
-        tupla_resultado = tuple(tupla_resultado)
-        print("____________________________________________________________")
-        print(f"Comprobando el tipo ** {type(tupla_resultado)} **\n")
-        print(f"Los resultados en una tupla, de las operaciones de los números ingresados, son:\n(suma, resta):")        
+        tupla_resultado = tuple(tupla_resultado)       
+        print(f"Comprobando el tipo ** {type(tupla_resultado)} **\n")           
         return tupla_resultado
         
-#PASO C:
+#PASO C: 
+print("____________________________________________________________")
+print(f"Los resultados en una tupla, de las operaciones de los números ingresados:\n(suma, resta):")     
 print(operaciones(numeros))
 print("____________________________________________________________")
