@@ -34,7 +34,7 @@ def operaciones(lista):
         tupla_resultado = (round(suma,2), round(resta,2))
         tupla_resultado = tuple(tupla_resultado)       
         print(f"Comprobando el tipo ** {type(tupla_resultado)} **\n")           
-        return tupla_resultado
+        return(tupla_resultado)
         
 #PASO C: 
 print("____________________________________________________________")

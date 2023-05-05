@@ -45,8 +45,11 @@ def multiplicar(a,b):
 print(f'La multiplicación de los números {num_1} y {num_2} es:  {multiplicar(num_1,num_2)}')
 
 def dividir(a,b):
-    divide = a / b
-    return round(divide,2) 
+    if b == 0:
+        return None
+    else:
+        divide = a / b
+        return round(divide,2) 
 print(f'La división de los números {num_1} y {num_2} es:  {dividir(num_1,num_2)}')
 
 #PASO B: 

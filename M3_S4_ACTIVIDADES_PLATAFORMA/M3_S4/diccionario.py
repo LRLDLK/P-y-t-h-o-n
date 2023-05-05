@@ -100,7 +100,7 @@ print("my_dict: ", my_dict)
 my_dict["Direccion"]["Region"] = "El Sol"
 print("my_dict: ", my_dict)
 
-#insertar
+#insertar nombre[clave] = valor 
 my_dict["Telefono"] = "12121212"
 print("elemento insertado Telefono: en diccionario my_dict", my_dict)
 #funciones de los diccionarios:

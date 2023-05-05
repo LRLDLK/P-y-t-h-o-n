@@ -24,12 +24,12 @@ for l in lista:
 
 print("-----------------DICCIONARIO---------------------")
 diccionario = dict()
-nombre=['A','B','C','D']
+clave=['A','B','C','D']
 indice = 0
 
 for d in lista:
-    for n in nombre:    
-        diccionario[nombre[indice]] = lista[indice]
+    for n in clave:    
+        diccionario[clave[indice]] = lista[indice]
     indice+=1
 #print(diccionario) 
 #print(type(diccionario)) => #<class 'dict'>
@@ -38,3 +38,4 @@ print("Imprimiendo las sublistas dentro del diccionario: ")
 for x,y in diccionario.items():
     print(f"{x}: {y}")  
     
+
