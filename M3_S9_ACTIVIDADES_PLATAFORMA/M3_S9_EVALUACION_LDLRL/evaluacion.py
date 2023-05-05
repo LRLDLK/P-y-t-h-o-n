@@ -14,9 +14,9 @@ contador=1
 
 while contador < 3:
     #  ciclo infinito que se romperá solo cuando estén los 2 números ingresados correctamente:
-    numeroEntero = input('Ingrese el número N°' + str(contador) + ': ') 
+    numeroFloat = input('Ingrese el número N°' + str(contador) + ': ') 
     try:
-            numero = float(numeroEntero)
+            numero = float(numeroFloat)
             if contador == 1:
                 num_1 = numero
             elif contador == 2:

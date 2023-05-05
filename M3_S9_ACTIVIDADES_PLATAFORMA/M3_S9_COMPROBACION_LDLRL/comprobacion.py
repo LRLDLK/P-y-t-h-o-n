@@ -24,20 +24,23 @@ while len(numeros) < 3:
     except ValueError:
         print("Lo ingresado NO es válido")
 
-        
-#  PASO B: operaciones        
+ 
+#  PASO B: operaciones
 def operaciones(lista):
         suma = 0 
         for n in lista:
                 suma  += n
                 resta = lista[0] - (lista[1]+lista[2])
         tupla_resultado = (round(suma,2), round(resta,2))
-        tupla_resultado = tuple(tupla_resultado)       
-        print(f"Comprobando el tipo ** {type(tupla_resultado)} **\n")           
+        tupla_resultado = tuple(tupla_resultado)                
         return(tupla_resultado)
-        
+
+
 #PASO C: 
-print("____________________________________________________________")
-print(f"Los resultados en una tupla, de las operaciones de los números ingresados:\n(suma, resta):")     
-print(operaciones(numeros))
-print("____________________________________________________________")
+resultados = operaciones(numeros) 
+
+print("___________________________________________________________________________") 
+print(f"Los resultados en una tupla, de las operaciones de los números ingresados:\n(SUMA de los 3, RESTA {numeros[0]} - ({numeros[1]} + {numeros[2]}) \n=> {resultados}")
+print(f"=> Comprobando el tipo tupla: ** {type(resultados)} **") 
+print("___________________________________________________________________________")
+
