@@ -58,9 +58,9 @@ def imprimir_nombres(nombres):
        print('•',n)   
    
 #PASO D:
-print('------------------------------------------------')
-print('-----------------LISTA ORIGINAL-----------------')
-print('------------------------------------------------')
+print('---------------------------------------------')
+print('---------------LISTA ORIGINAL----------------')
+print('---------------------------------------------')
 print('La lista original de los nombres es: \n')
 imprimir_nombres(lista)
 
