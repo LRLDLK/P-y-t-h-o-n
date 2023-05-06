@@ -72,16 +72,17 @@ def resultado_final(a,b):
     valores = (operaciones(a,b))   
     para_diccionario = zip(claves, valores)
     diccionario = dict(para_diccionario)
-    for x,y in diccionario.items():
-          print(f'{x}: {y}')   
-   
-
+    return diccionario
 
 #PASO C-2:
-print('-----------------DICCIONARIO-----------------------')
+diccionario = resultado_final(num_1, num_2)
+
+print('-----------------DICCIONARIO--------------------------')
 print('Imprimiendo las operaciones dentro del diccionario: ')
-resultado_final(num_1, num_2)
-print('----------------------------------------------------')
+for x,y in diccionario.items():
+    print(f'{x}: {y}') 
+print(f"\n => Comprobando tipo diccionario: ** {type(diccionario)} **")
+print('------------------------------------------------------')
 
 
    
