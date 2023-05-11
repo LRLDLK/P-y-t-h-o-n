@@ -43,12 +43,10 @@ def listas(lista):
 #PASO B:
 def hacer_grandioso(magos):
     nombre ='El gran '
-    indice= 0
     magos_grandiosos =[]
     for indice, item in enumerate(magos):
         if item:
             magos[indice] = nombre+magos[indice]                              
-        indice+=1
     magos_grandiosos.append(magos)         
     return  magos_grandiosos
 
