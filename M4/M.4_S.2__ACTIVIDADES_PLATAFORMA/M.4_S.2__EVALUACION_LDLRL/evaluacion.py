@@ -13,55 +13,66 @@ muestre por pantalla las actualizaciones respectivas.
 '''
 
 class Persona:
-    def __init__(self, nombre, apellidos, sexo, edad, estatura, peso):
-        self.nombre = nombre
-        self.apellidos = apellidos
-        self.sexo = sexo
-        self.edad = edad
-        self.estatura = estatura    
-        self.peso = peso
+    def __init__(self, nombre, apellido, genero, edad, estatura, peso):
+        self._nombre = nombre
+        self._apellido = apellido
+        self._genero = genero
+        self._edad = edad
+        self._estatura = estatura    
+        self._peso = peso
 
 
 #getter and setters son funciones para obtener o dar valor a los atributos:
 
-#getters
-    def get_nombre(self):
-        return self.nombre
+    @property
+    def nombre(self):
+        return self._nombre
 
-    def get_apellidos(self):
-        return self.apellidos
+    @nombre.setter
+    def nombre(self,nombre):
+        self._nombre = nombre
+    @property
+    def apellido(self):
+        return self._apellido
     
-    def get_sexo(self):
-        return self.sexo
-    
-    def get_edad(self):
-        return self.edad    
-    
-    def get_estatura(self):
-        return self.estatura
-    
-    def get_peso(self):
-        return self.peso
-
-#setters
-    def set_nombre(self,nombre):
-        self.nombre = nombre
-
-    def set_apellidos(self,apellidos):
-        self.apellidos = apellidos
-
-    def set_sexo(self,sexo):
-        self.sexo = sexo
+    @apellido.setter
+    def apellido(self,apellido):
+        self._apellido = apellido
         
-    def set_edad(self,edad):
-        self.edad = edad    
+    @property    
+    def genero(self):
+        return self._genero
     
-    def set_estatura(self,estatura):
-        self.estatura = estatura
-
-    def set_peso(self,peso):
-        self.peso = peso
+    @genero.setter
+    def genero(self,genero):
+        self._genero = genero
         
+    @property   
+    def edad(self):
+        return self._edad
+
+    @edad.setter
+    def edad(self,edad):
+        self._edad = edad      
+    
+    @property   
+    def estatura(self):
+        return self._estatura
+
+    @estatura.setter
+    def estatura(self,estatura):
+        self._estatura = estatura
+    
+    @property   
+    def peso(self):
+        return self._peso
+
+    @peso.setter
+    def peso(self,peso):
+        self._peso = peso
+  
+    def __str__(self):
+        return f'Persona(nombre: {self.nombre}, apellido: {self.apellido}, genero: {self.genero}, edad: {self.edad}. estatura: {self.estatura}, peso: {self.peso})'      
 
 #instanciar persona
 persona_1 = Persona("Pedro", "Vivas", "Masculino", 20, 1.78, 68)
@@ -73,16 +84,20 @@ persona_2 = Persona("Juan", "Camargo", "Masculino", 18, 1.8, 75)
 
 #get (obtener) el valor del atributo antes de modificar
 print("-------- Datos originales -----------")
-print(f"La edad de persona_1 con nombre {persona_1.nombre} se define con {persona_1.get_edad()} años \n")
-print(f"El apellido de persona_2 con nombre {persona_2.nombre} se define como {persona_2.get_apellidos()}")
+print(persona_1)
+print(persona_2)
+print(f"\nLa edad de persona_1 con nombre {persona_1.nombre} es {persona_1.edad} años \n")
+print(f"El apellido de persona_2 con nombre {persona_2.nombre} es {persona_2.apellido}")
 
 #setear (cambiar) valor atributo
-persona_1.set_edad(21)
-persona_2.set_apellidos("Santiago")
+persona_1.edad = 21
+persona_2.apellido = "Santiago"
 
 #get (obtener) el valor del atributo después de modificar
 print("-------- Datos modificados -----------")
-print(f"La edad de persona_1 con nombre {persona_1.nombre} se ha modificado a {persona_1.get_edad()} años \n")
-print(f"El apellido de persona_2 con nombre {persona_2.nombre} se se ha modificado a {persona_2.get_apellidos()}")
+print(persona_1)
+print(persona_2)
+print(f"\nLa edad de persona_1 con nombre {persona_1.nombre} se ha modificado a {persona_1.edad} años \n")
+print(f"El apellido de persona_2 con nombre {persona_2.nombre} se se ha modificado a {persona_2.apellido}")
 
 
