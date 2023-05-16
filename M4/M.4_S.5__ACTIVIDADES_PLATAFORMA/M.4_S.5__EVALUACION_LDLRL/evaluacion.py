@@ -1,16 +1,12 @@
-'''
-EJERCICIO:
-Implementar en Python la clase Persona, que tenga como atributos: nombre, apellidos, sexo, edad,
-estatura y peso. Adicionalmente, se deben implementar los métodos get y set que modifiquen todos
-los atributos antes mencionados de la clase persona, recordando que los métodos get son los
-métodos que permiten acceder al estado del objeto persona, y los métodos set permiten modificar
-el estado de dicho objeto.
-Cree dos objetos de la instancia persona con los siguientes datos:
-Persona_1: Pedro, Vivas, Masculino, 20 años, 1.78 mts, 68 Kg.
-Persona_2: Juan, Camargo, Masculino. 18, 1.8 mts, 75 Kg.
-Modifique en la Persona_1 su edad a 21 años, y a la Persona_2 el apellido a Santiago, y que se
-muestre por pantalla las actualizaciones respectivas. 
-'''
+"""
+EJERCICIOS:
+1. Defina una clase que contiene el objeto Persona con un solo atributo nombre. Luego, se
+crean dos subclases: Maratonista y Ciclista, que pertenecen a la clase Persona.
+2. Cada Clase contiene un método que se llama movimiento. Para el caso de la Persona, el
+estado de movimiento es “caminando”, para el caso del Maratonista es “trotando”, y para
+el caso del Ciclista es “rodando”.
+3. Diseñe la clase en Python que refleje la herencia antes descrita.
+"""
 
 class Persona:
     def __init__(self, nombre, apellidos, sexo, edad, estatura, peso):

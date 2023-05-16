@@ -1,33 +1,12 @@
 # EJERCICIO:
-# Codifique en Python una clase que represente a un animal. Un animal tiene las siguientes
-# características comunes:
-# • Nombre.
-# • Raza.
-# • Edad.
-# • Peso.
-# Debe crear dos instancias u objetos de la clase Animal, cuyos objetos son un caballo y un león, con
-# las siguientes características particulares:
-# Caballo             |   León
-# Nombre Zeus         |   Nombre Boulder
-# Edad 5 años         |   Edad 10 años
-# Raza Pura sangre    |   Raza Atlas
-# Peso 450 kg         |   Peso 130 kg
+# Realice un diagrama de clases que simule a una persona y a un estudiante. La persona contiene las
+# siguientes características: número de identificación, el nombre, el apellido. Mientras que el
+# estudiante contiene el número de identificación, el nombre, el apellido, código del alumno y matrícula.
+# Ambos poseen un método para obtener los datos. 
 
 from multipledispatch import dispatch
 class Animal:
-    #definiendo constructor con parametros
-    # def __init__(self,nombre:str,raza:str,edad:int,peso:float):
-    #     self.nombre = nombre
-    #     self.raza = raza
-    #     self.edad = edad
-    #     self.peso = peso
-
-  #definiendo constructor con parametros vacíos
-    # def __init__(self,nombre = None,raza = None,edad = None,peso = None):
-    #     self.nombre = nombre
-    #     self.raza = raza
-    #     self.edad = edad
-    #     self.peso = peso
+    
 
 #con multidispatch para mayor exactitud en el tipo de datos
     @dispatch(str,str,int,float)
