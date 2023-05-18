@@ -1,8 +1,9 @@
-from modelo.persona import Persona
-from modelo.cliente import Cliente
+# from modelo.persona import Persona
+# from modelo.cliente import Cliente
 from service.cliente_service import ClienteService
 from service.supervisor_service import SupervisorService
 from service.menu_service import MenuService
+from modelo.supervisor_zona import SupervisorZona
 
 
 def main():
@@ -26,8 +27,13 @@ def main():
 
 #funcion inicializadora para dar un punto de entrada/inicio al programa                
 if  __name__ == "__main__":
-    main()
-    
+    #main()
+
+
+
+    supervisor_zona = SupervisorZona('Maria', 'papa', '223', 'tech', '3', '9', '3')
+    print(supervisor_zona.nombre)
+    print(supervisor_zona.promedio)
     
     
     

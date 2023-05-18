@@ -1,8 +1,11 @@
-from modelo.persona import Persona
-from modelo.cliente import Cliente
+# from modelo.persona import Persona
+# from modelo.cliente import Cliente
 from service.cliente_service import ClienteService
 from service.supervisor_service import SupervisorService
 from service.menu_service import MenuService
+from modelo.supervisor_zona import SupervisorZona
+from modelo.supervisor import Supervisor
+from modelo.capacidades import Capacidades
 
 
 def main():
@@ -26,24 +29,18 @@ def main():
 
 #funcion inicializadora para dar un punto de entrada/inicio al programa                
 if  __name__ == "__main__":
-    main()
-    
-    
-    
-    
-    
-    
-    
+    #main()
 
-#pruebas:
-# persona = Persona("fulano", "perez", "123456789")
-# print(persona)
-# print(str(persona))
-# persona.get_tipo()
 
-# print("-------------------------")
-
-# cliente = Cliente("fulano", "perez", "123456789", "0.1")
-# print(cliente)
-# print(str(cliente))
-# cliente.get_tipo()
+    supervisor = Supervisor('Josua', 'Feliz', '3434', 'digital')
+    capacidades = Capacidades('3','4')
+    supervisor_zona = SupervisorZona(supervisor, capacidades)
+    print(supervisor_zona.supervisor.area)
+    print(supervisor_zona.capacidades.ncertificados)
+    
+    
+    
+    capacidades_2 = Capacidades('2','3')
+    supervisor_zona.capacidades = capacidades_2
+    print(supervisor_zona.capacidades.ncertificados)
+    
