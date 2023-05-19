@@ -15,7 +15,7 @@ class Trabajador(Persona, Departamento):
     def _salario(self, salario):
         self.salario = salario        
    
-    def __str__(self) -> str:
-        return f"Nombre: {self._nombre}, Apellido: {self._apellido}, Año: {self._anno}, Nombre Depto.: {self._nombre_dpto}, Nombre corto Depto.: {self._nombre_corto_dpto}, Salario: {self._salario}"
+    # def __str__(self) -> str:
+    #     return f"Nombre: {self._nombre}, Apellido: {self._apellido}, Año: {self._anno}, Nombre Depto.: {self._nombre_dpto}, Nombre corto Depto.: {self._nombre_corto_dpto}, Salario: {self._salario}"
     
     
