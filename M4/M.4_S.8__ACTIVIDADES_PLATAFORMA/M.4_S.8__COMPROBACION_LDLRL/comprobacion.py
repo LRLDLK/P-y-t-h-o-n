@@ -12,3 +12,17 @@ Datos de información en la línea 3
 Datos de información en la línea 4
 Datos de información en la línea 5
 """
+
+
+#crear arhivo
+def crear_archivo():
+    try:
+        file = open('informacion.dat','x') #crear el archivo y se apertura 
+        file.readline()   #no se puede leer si se está escribiendo el archivo
+        file.close()    
+    except FileExistsError:
+        print('ERROR: El archivo ya existe')
+    except Exception as e: #otros errores
+        print(f'ERROR:{e}')
+        
+crear_archivo()

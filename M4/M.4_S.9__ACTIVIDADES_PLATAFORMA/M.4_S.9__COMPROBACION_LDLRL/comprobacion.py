@@ -19,3 +19,19 @@ agregando la segunda línea del archivo
 finalizando la línea agregada
 """
 
+def agregando_informacion(texto):
+    try:
+        with open("informacion.dat","a", encoding="utf-8") as file:
+            file.write(texto+"\n")
+    except FileNotFoundError:
+        print("ERROR: No se encontro el archivo")
+    except Exception as e:
+        print("ERROR: ", e)
+    
+
+agregando_informacion('Hola Mundo')
+agregando_informacion('Este en una nueva línea en el archivo')
+agregando_informacion('agregando la segunda línea del archivo')
+agregando_informacion('finalizando la línea agregada')
+            
+
