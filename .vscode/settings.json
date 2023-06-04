@@ -4,5 +4,8 @@
     },
     "python.formatting.provider": "none",
     "python.linting.enabled": false,
-    "python.linting.pylintEnabled": true
+    "python.linting.pylintEnabled": true,
+    "editor.fontLigatures": false,
+    "editor.fontVariations": false,
+    "editor.fontWeight": "normal"
 }

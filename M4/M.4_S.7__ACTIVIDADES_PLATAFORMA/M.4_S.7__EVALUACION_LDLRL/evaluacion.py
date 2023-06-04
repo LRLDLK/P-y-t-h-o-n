@@ -17,31 +17,28 @@ rango (1000 a 2000)
 class RangoSalarioError(Exception):
     '''Excepción definida'''    
     def __init__(self, msj):  # define método constructor ...   
-        Exception.__init__(self)  # … de excepción ... 
+        Exception.__init__(self)  ## … de excepción ... 
         self.msj = msj # … y con atributo msj
 
-class RangoSalarioCorrecto(Exception):
-    def __init__(self, msj):  # define método constructor ...   
-        Exception.__init__(self)  # … de excepción ... 
-        self.msj = msj # … y con atributo msj        
+# class RangoSalarioCorrecto(Exception):
+#     def __init__(self, msj):  # define método constructor ...   
+#         Exception.__init__(self)  # … de excepción ... 
+#         self.msj = msj # … y con atributo msj        
          
 def salario():
-    rango = "(1000 a 2000)"
+    rango = " está definido en el rango: (1000 a 2000)"
     while True:
         try:  # bloque de código a controlar
             salario = int(input('Ingrese el salario: '))  # introducir valor
             if salario not in range(1000,2001):  # si valor no esta en el rango
-                raise RangoSalarioError('ERROR: '+str(salario)+' --> Salario NO está definido en el rango: '+ rango)  # llama a excepción definida
-            else:
-                raise RangoSalarioCorrecto('CORRECTO: '+str(salario)+' --> Salario SI está definido en el rango '+rango)
+                raise RangoSalarioError('ERROR: Salario de '+str(salario)+' -->  NO'+rango)  # llama a excepción definida
         except RangoSalarioError as e:  # excepción definida 
             print(e.msj)        
-        except RangoSalarioCorrecto as e:  # excepción definida
-            print(e.msj)
-            break
         except ValueError:
             print('ERROR: Ingreso inválido. Ingrese el salario nuevamente.')
-
+        else:
+            print('CORRECTO: Salario de '+str(salario)+' -->  SI'+rango)
+            break
       
 
 if __name__ == "__main__":
