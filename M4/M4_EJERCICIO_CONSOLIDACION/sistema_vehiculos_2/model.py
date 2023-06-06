@@ -44,10 +44,7 @@ class Automovil(Vehiculo):
    
     def __str__(self) -> str:
         return f'Marca {self.marca}, Modelo {self.modelo}, {self.numero_ruedas} ruedas, {self.velocidad} Km/h, {self.cilindrada} cc)'
-              
-
 # **** Fin Parte 1:****
-
 
 #****Parte 2:****
 class Particular(Automovil):
@@ -56,9 +53,8 @@ class Particular(Automovil):
         self.numero_puestos = numero_puestos
     
     def __str__(self) -> str:
-        return f'Marca {self.marca}, Modelo {self.modelo}, {self.numero_ruedas} ruedas, {self.velocidad} Km/h, {self.cilindrada} cc, Puestos: {self.numero_puestos}'
-            
-
+        return super().__str__() +  f'Puestos: {self.numero_puestos}'
+    
         
 class Carga(Automovil):
     def __init__(self, marca, modelo, numero_ruedas, velocidad, cilindrada, peso_carga) -> None:#constructor
@@ -66,7 +62,7 @@ class Carga(Automovil):
         self.peso_carga = peso_carga
 
     def __str__(self) -> str:
-        return f'Marca {self.marca}, Modelo {self.modelo}, {self.numero_ruedas} ruedas, {self.velocidad} Km/h, {self.cilindrada} cc, Carga: {self.peso_carga}Kg'
+        return super().__str__() + f'Carga: {self.peso_carga}Kg'
         
 class Bicicleta(Vehiculo):
     def __init__(self, marca, modelo, numero_ruedas, tipo) -> None:#constructor
@@ -84,7 +80,7 @@ class Motocicleta(Bicicleta):
         self.motor = motor
     
     def __str__(self) -> str:
-        return f'Marca {self.marca}, Modelo {self.modelo}, {self.numero_ruedas} ruedas, Tipo: {self.tipo}, Motor: {self.motor}, Cuadro: {self.cuadro}, Nro Radios: {self.numero_radios})'
+        return super().__str__() + f'Motor: {self.motor}, Cuadro: {self.cuadro}, Nro Radios: {self.numero_radios})'
               
 
 # for indice, item in enumerate(lista):

@@ -31,13 +31,13 @@ def salario():
         try:  # bloque de código a controlar
             salario = int(input('Ingrese el salario: '))  # introducir valor
             if salario not in range(1000,2001):  # si valor no esta en el rango
-                raise RangoSalarioError('ERROR: Salario de '+str(salario)+' -->  NO'+rango)  # llama a excepción definida
+                raise RangoSalarioError(f'ERROR: Salario de {str(salario)} -->  NO'+rango)  # llama a excepción definida
         except RangoSalarioError as e:  # excepción definida 
             print(e.msj)        
         except ValueError:
             print('ERROR: Ingreso inválido. Ingrese el salario nuevamente.')
         else:
-            print('CORRECTO: Salario de '+str(salario)+' -->  SI'+rango)
+            print(f'CORRECTO: Salario de {str(salario)} -->  SI',rango)
             break
       
 
